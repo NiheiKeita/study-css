@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Level2 Q5</title>
+  <style>
+    .parent {
+      width: 240px;
+      height: 140px;
+      background: #ef9a9a;
+      padding: 10px;
+      border: 2px solid #000;
+      box-sizing: border-box;
+    }
+
+    .child {
+      width: 100%;
+      height: 80px;
+      background: #90caf9;
+      border: 10px solid #1e88e5;
+      /* バグ修正: border が原因で左右にはみ出ています */
+    }
+
+    .answer {
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>5. 子供が親からはみ出ています（border が原因）</h1>
+  <p>バグを修正して、親の中に収めてください。</p>
+
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+
+  <div class="answer">
+    正解画像: <img src="answers/q5.png" alt="level2 q5 answer" />
+  </div>
+</body>
+</html>

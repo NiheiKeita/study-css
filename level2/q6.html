@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Level2 Q6</title>
+  <style>
+    .parent {
+      width: 260px;
+      background: #ef9a9a;
+      border: 2px solid #000;
+    }
+
+    .child {
+      width: 200px;
+      height: 60px;
+      background: #90caf9;
+      margin-top: -20px;
+      /* バグ修正: margin が原因で親の上からはみ出しています */
+    }
+
+    .answer {
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>6. 子供が親の上にはみ出ています（marginが原因）</h1>
+  <p>バグを修正して、親の中に収めてください。</p>
+
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+
+  <div class="answer">
+    正解画像: <img src="answers/q6.png" alt="level2 q6 answer" />
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Level2 Q7</title>
+  <style>
+    .parent {
+      width: 200px;
+      background: #ef9a9a;
+      border: 2px solid #000;
+      padding: 8px;
+      white-space: nowrap;
+    }
+
+    .child {
+      display: inline-block;
+      width: 100px;
+      height: 60px;
+      background: #90caf9;
+      margin-right: 16px;
+      /* バグ修正: インライン要素の隙間で右にはみ出しています */
+    }
+
+    .answer {
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>7. 2つ目の四角が右にはみ出ています（inline-blockの隙間）</h1>
+  <p>バグを修正して、親の中に収めてください。</p>
+
+  <div class="parent">
+    <div class="child"></div>
+    <div class="child"></div>
+  </div>
+
+  <div class="answer">
+    正解画像: <img src="answers/q7.png" alt="level2 q7 answer" />
+  </div>
+</body>
+</html>
